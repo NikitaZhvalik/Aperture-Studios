@@ -806,10 +806,15 @@ a {
   .header {
     display: none;
   }
+
   .main__menu {
     position: absolute;
     display: block;
     top: 40px;
     right: 40px;
+  }
+
+  .footer__icons {
+    margin: 0;
   }
 }
