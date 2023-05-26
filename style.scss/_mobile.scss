@@ -1,0 +1,136 @@
+@media (max-width: 767px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 14px;
+        width: 320px;
+    }
+
+    .box-text {
+        padding: 0;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .back-chapter {
+        align-items: center;
+        min-height: 50vh;
+    }
+
+    .header {
+        margin: 24px 30px;
+    }
+
+    .main {
+        padding-top: 300px;
+    }
+
+    .WhatWeDo {
+        padding: 0;
+    }
+
+    .box-product {
+        gap: 8px;
+    }
+
+    .product {
+        min-height: 50vh;
+        padding: 0 0 30px 20px;
+    }
+
+    .tools {
+        min-height: 300px;
+        flex-direction: column;
+
+        &__left-side {
+            padding: 0;
+            min-width: 100vw;
+            min-height: 50vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__right-side {
+            display: none;
+        }
+
+        &__text {
+            text-align: center;
+            margin-right: 0;
+        }
+    }
+
+    .PastClients {
+        padding: 50px 0;
+
+        &__svg {
+            flex-direction: column;
+        }
+    }
+
+    .NeedHelp {
+        padding: 50px 0;
+
+        &__title {
+            width: 320px;
+        }
+    }
+
+    .footer {
+        padding: 50px 0;
+
+        &__nav {
+            justify-content: center;
+        }
+
+        &__left {
+            display: none;
+        }
+
+        &__box-text {
+            display: none;
+        }
+
+        &__subscribe {
+            justify-content: center;
+        }
+
+        &__btn {
+            width: 250px;
+        }
+
+        &__rights {
+            flex-direction: column;
+        }
+
+        &__icons {
+            padding-top: 50px;
+            display: block;
+            display: flex;
+            justify-content: center;
+            column-gap: 40px;
+            align-self: center;
+        }
+    }
+}
+
+@media (max-width: 649px) {
+    .header {
+        display: none;
+    }
+
+    .main__menu {
+        position: absolute;
+        display: block;
+        top: 40px;
+        right: 40px;
+    }
+}

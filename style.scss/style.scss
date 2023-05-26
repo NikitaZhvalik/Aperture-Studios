@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+.link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #FFFFFF;
+        transition: width 0.45s ease-out;
+    }
+
+    &:hover:after,
+    &:focus:after {
+        width: 100%;
+    }
+}
+
+.link-get {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 155px;
+    border-radius: 14px;
+    font-size: 16px;
+    color: #000000;
+    transition: background 0.2s ease-in;
+
+    &:hover {
+        background: #C0C0C0;
+    }
+}
+
+.logo {
+    height: 31px;
+    width: max-content;
+
+    & path {
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover path {
+        fill: #C0C0C0;
+    }
+}
+
+.subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C0C0C0;
+
+    &_uppercase {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.title {
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #C0C0C0;
+
+    &_uppercase {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.back-chapter {
+    padding-top: 260px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.svg {
+    &_hover:hover path {
+        fill: #C0C0C0;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-right: 40px;
+    align-self: flex-end;
+}
+
+.icon {
+    display: flex;
+    gap: 6px;
+
+    &__text {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    & path {
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover path {
+        fill: #FFFFFF;
+    }
+}
+
+// header
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 150px;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link_business {
+        margin-right: 52px;
+    }
+
+    &__nav-bar {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+// main
+.main {
+    background-image: url(../img/BackHeader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 466px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__menu {
+        display: none;
+    }
+
+    &__title {
+        font-size: 54px;
+        line-height: 59px;
+    }
+
+    &__subtitle {
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        width: 580px;
+        text-align: center;
+        margin: 18px 0 13px;
+    }
+}
+
+// WhatWeDo
+.WhatWeDo {
+    padding: 112px 0 50px;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        margin-bottom: 42px;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    &__box-product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 600px;
+    width: 576px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    &_1 {
+        background-image: url(../img/product-1.jpg);
+        padding-right: 45px;
+    }
+
+    &_2 {
+        background-image: url(../img/product-2.jpg);
+        padding-right: 32px;
+    }
+
+    &_3 {
+        background-image: url(../img/product-3.jpg);
+        padding-right: 30px;
+    }
+
+    &_4 {
+        background-image: url(../img/product-4.jpg);
+        padding-right: 66px;
+    }
+
+    &__subtitle {
+        text-align: start;
+    }
+
+    &__text {
+        padding: 20px 0 18px;
+        text-align: start;
+    }
+
+    &__link-get {
+        justify-content: start;
+        width: 142px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+    }
+
+    &__img {
+        margin: 0 6px 0 4px;
+    }
+}
+
+// Sunset at Mount Fuji
+.MountFuji {
+    background-image: url(../img/BackMountFuji.jpg);
+
+    &__box-text {
+        padding: 0px 62px 102px 0;
+    }
+
+    &__subtitle {
+        text-align: start;
+        width: 298px;
+    }
+
+    &__text {
+        text-align: start;
+        width: 298px;
+    }
+
+    &__icons {
+        margin-top: 102px;
+    }
+}
+
+// tools
+.tools {
+    min-height: 540px;
+    display: flex;
+
+    &__left-side {
+        padding: 173px 15px 153px 100px;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__subtitle {
+        margin-bottom: 3px;
+    }
+
+    &__title {
+        margin-top: 3px;
+        margin-bottom: 7px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    &__text {
+        margin: 7px 15px 10px 0;
+        max-width: 514px;
+        text-align: start;
+    }
+
+    &__link-get {
+        margin-top: 10px;
+    }
+
+    &__img {
+        margin-right: 6px;
+    }
+
+    &__right-side {
+        width: 50vw;
+        padding-bottom: 40px;
+        background-image: url(../img/BackCamera.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+// Monstera 
+.Monstera {
+    background-image: url(../img/BackMonstera.jpg);
+
+    &__box-text {
+        padding: 0px 62px 102px 0;
+    }
+
+    &__subtitle {
+        text-align: start;
+        width: 298px;
+    }
+
+    &__text {
+        text-align: start;
+        width: 298px;
+    }
+
+    &__icons {
+        margin-top: 102px;
+    }
+}
+
+// Past clients
+.PastClients {
+    padding: 114px 0 140px;
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        margin-top: 8px;
+        margin-bottom: 41px;
+    }
+
+    &__svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 110px;
+        row-gap: 30px;
+    }
+
+    &__link {
+        transition: scale 0.25s ease-in;
+    }
+
+    &__link:hover {
+        scale: 1.2;
+    }
+}
+
+// Star fall in the Himalayas
+.StarFall {
+    background-image: url(../img/BackStarFall.jpg);
+
+    &__box-text {
+        padding: 0 97px 106px 0;
+    }
+
+    &__subtitle {
+        text-align: start;
+        width: 254px;
+    }
+
+    &__text {
+        text-align: start;
+        width: 241px;
+    }
+
+    &__icons {
+        margin-top: 102px;
+    }
+}
+
+// Need help
+.NeedHelp {
+    padding: 114px 0 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        width: 571px;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        margin-top: 8px;
+        margin-bottom: 11px;
+    }
+
+    &__link-get {
+        margin-top: 11px;
+    }
+}
+
+// Footer
+.footer {
+    padding: 102px 136px;
+    display: flex;
+    flex-direction: column;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 36px 0;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__right {
+        display: flex;
+        column-gap: 55px;
+        row-gap: 5px;
+    }
+
+    &__text_at-start {
+        text-align: start;
+    }
+
+    &__BusinessAreas {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__pages {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__subscribe {
+        padding: 36px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+    }
+
+    &__box-text {
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    &__btn {
+        background: #F9FAFB;
+        border: 1px solid #E5E7EB;
+        border-radius: 12px;
+        width: 458px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 20px;
+        transition: background 0.25s ease-in;
+
+        &:hover {
+            background: #C0C0C0;
+            cursor: pointer;
+        }
+    }
+
+    &__subtitle {
+        &_subscribe {
+            text-align: start;
+        }
+    }
+
+    &__text {
+        &_subscribe {
+            text-align: start;
+        }
+    }
+
+    &__rights {
+        margin: 56px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icons {
+        padding: 0;
+        align-items: center;
+    }
+}
+
+@import 'tablet';
+@import 'mobile';
